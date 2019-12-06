@@ -54,6 +54,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Titan-Intelligent-Web", "Ti
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "57442"
+		SlnRelativePath = "Titan-Intelligent-Web\"
 	EndProjectSection
 EndProject
 Global
