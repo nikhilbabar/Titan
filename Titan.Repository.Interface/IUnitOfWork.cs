@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Titan.Repository
+namespace Titan.Repository.Interface
 {
     public interface IUnitOfWork<TContext> where TContext : DbContext, new()
     {

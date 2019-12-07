@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Titan.Model;
-using Titan.Service.Datum;
+using Titan.Service.Interface;
 
 namespace Titan.WebApi.Controllers
 {

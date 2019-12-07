@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Titan.Repository
+namespace Titan.Repository.Interface
 {
     public interface IGenericRepository<T> where T: class
     {

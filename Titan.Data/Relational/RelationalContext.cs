@@ -11,7 +11,11 @@ namespace Titan.Data.Relational
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserType> UserTypes { get; set; }
         public virtual DbSet<Search> Searches { get; set; }
-        
+
+        public RelationalContext(DbContextOptions options) : base(options)
+        {
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
             if (!builder.IsConfigured)
@@ -21,7 +25,7 @@ namespace Titan.Data.Relational
                 /// you should move it out of source code. 
                 /// See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
                 /// 
-                builder.UseSqlServer(@"Server=(local);Database=Titan;Trusted_Connection=True;");
+                //builder.UseSqlServer(@"Server=(local);Database=Titan;Trusted_Connection=True;");
             }
         }
 

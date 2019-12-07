@@ -14,7 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Titan.Common\Titan.Common.csproj" />
     <ProjectReference Include="..\Titan.IoC\Titan.IoC.csproj" />
-    <ProjectReference Include="..\Titan.Service\Titan.Service.csproj" />
+    <ProjectReference Include="..\Titan.Service.Interface\Titan.Service.Interface.csproj" />
   </ItemGroup>
 
 </Project>

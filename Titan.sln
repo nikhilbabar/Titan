@@ -34,6 +34,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.Domain", "Titan.Domai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.Common", "Titan.Common\Titan.Common.csproj", "{E91B464F-EB3D-42C0-A831-F6AE69C4DB22}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titan.Repository.Interface", "Titan.Repository.Interface\Titan.Repository.Interface.csproj", "{75CB899E-D8ED-49C1-9531-6B8E69C02021}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titan.Service.Interface", "Titan.Service.Interface\Titan.Service.Interface.csproj", "{7EB24BCE-A686-400E-8303-92516AEFDF2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,6 +88,14 @@ Global
 		{E91B464F-EB3D-42C0-A831-F6AE69C4DB22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E91B464F-EB3D-42C0-A831-F6AE69C4DB22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E91B464F-EB3D-42C0-A831-F6AE69C4DB22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75CB899E-D8ED-49C1-9531-6B8E69C02021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75CB899E-D8ED-49C1-9531-6B8E69C02021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75CB899E-D8ED-49C1-9531-6B8E69C02021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75CB899E-D8ED-49C1-9531-6B8E69C02021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EB24BCE-A686-400E-8303-92516AEFDF2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EB24BCE-A686-400E-8303-92516AEFDF2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EB24BCE-A686-400E-8303-92516AEFDF2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EB24BCE-A686-400E-8303-92516AEFDF2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,6 +111,8 @@ Global
 		{11BCCBFE-7C2E-417F-9D3F-5515873C269B} = {23956DDC-9528-4B14-BB21-74CE736C86AC}
 		{FA0C57E7-C209-4D78-AB02-41BDB35971C6} = {23956DDC-9528-4B14-BB21-74CE736C86AC}
 		{E91B464F-EB3D-42C0-A831-F6AE69C4DB22} = {23956DDC-9528-4B14-BB21-74CE736C86AC}
+		{75CB899E-D8ED-49C1-9531-6B8E69C02021} = {23956DDC-9528-4B14-BB21-74CE736C86AC}
+		{7EB24BCE-A686-400E-8303-92516AEFDF2D} = {23956DDC-9528-4B14-BB21-74CE736C86AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E0D08CDE-0F45-45C4-9A1B-FDCB3446D3E8}

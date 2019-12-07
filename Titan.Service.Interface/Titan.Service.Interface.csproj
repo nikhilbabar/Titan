@@ -5,9 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Titan.DataFactory\Titan.DataFactory.csproj" />
     <ProjectReference Include="..\Titan.Model\Titan.Model.csproj" />
-    <ProjectReference Include="..\Titan.Service.Interface\Titan.Service.Interface.csproj" />
   </ItemGroup>
 
 </Project>

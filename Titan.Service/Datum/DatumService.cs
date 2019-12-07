@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Titan.DataFactory.File;
 using Titan.Model;
+using Titan.Service.Interface;
 
-namespace Titan.Service.Datum
+namespace Titan.Service
 {
     public class DatumService : IDatumService
     {

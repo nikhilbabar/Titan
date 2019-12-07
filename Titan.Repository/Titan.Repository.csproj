@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Titan.Data\Titan.Data.csproj" />
+    <ProjectReference Include="..\Titan.Repository.Interface\Titan.Repository.Interface.csproj" />
   </ItemGroup>
 
 </Project>

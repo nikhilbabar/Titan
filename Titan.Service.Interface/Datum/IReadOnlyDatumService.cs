@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Titan.Model;
 
-namespace Titan.Service.Datum
+namespace Titan.Service.Interface
 {
     public interface IReadOnlyDatumService
     {

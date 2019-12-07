@@ -5,6 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using Titan.Data.Relational;
+using Titan.Repository.Interface;
 
 namespace Titan.Repository
 { 

@@ -8,7 +8,9 @@ using Titan.Common.Utilities;
 using Titan.Data.Relational;
 using Titan.DataFactory.File;
 using Titan.Repository;
-using Titan.Service.Datum;
+using Titan.Repository.Interface;
+using Titan.Service;
+using Titan.Service.Interface;
 
 namespace Titan.IoC
 {

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Titan.Data.Relational;
+using Titan.Repository.Interface;
 //using System.Data.Entity;
 //using System.Data.Entity.Validation;
 

@@ -11,9 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Titan.Common.Utilities;
-using Titan.DataFactory.File;
 using Titan.IoC;
-using Titan.Service.Datum;
 
 namespace Titan.WebApi
 {
