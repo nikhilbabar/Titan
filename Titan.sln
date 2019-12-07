@@ -28,34 +28,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.IoC", "Titan.IoC\Tita
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.Repository", "Titan.Repository\Titan.Repository.csproj", "{C50950DA-153C-472F-B127-5EDACA92564A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.IdP", "Titan.IdP\Titan.IdP.csproj", "{B2F39B6C-4BC0-4495-A1A8-BEBDB3E2ABCA}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.Data", "Titan.Data\Titan.Data.csproj", "{11BCCBFE-7C2E-417F-9D3F-5515873C269B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.Domain", "Titan.Domain\Titan.Domain.csproj", "{FA0C57E7-C209-4D78-AB02-41BDB35971C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titan.Common", "Titan.Common\Titan.Common.csproj", "{E91B464F-EB3D-42C0-A831-F6AE69C4DB22}"
-EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Titan-Intelligent-Web", "Titan-Intelligent-Web\", "{9AC2CCE2-148B-4225-905C-E3A013434F2D}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57442"
-		Debug.AspNetCompiler.PhysicalPath = "Titan-Intelligent-Web\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57442\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57442"
-		Release.AspNetCompiler.PhysicalPath = "Titan-Intelligent-Web\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57442\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "57442"
-		SlnRelativePath = "Titan-Intelligent-Web\"
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.Common", "Titan.Common\Titan.Common.csproj", "{E91B464F-EB3D-42C0-A831-F6AE69C4DB22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,10 +72,6 @@ Global
 		{C50950DA-153C-472F-B127-5EDACA92564A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C50950DA-153C-472F-B127-5EDACA92564A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C50950DA-153C-472F-B127-5EDACA92564A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B2F39B6C-4BC0-4495-A1A8-BEBDB3E2ABCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B2F39B6C-4BC0-4495-A1A8-BEBDB3E2ABCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B2F39B6C-4BC0-4495-A1A8-BEBDB3E2ABCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B2F39B6C-4BC0-4495-A1A8-BEBDB3E2ABCA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{11BCCBFE-7C2E-417F-9D3F-5515873C269B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{11BCCBFE-7C2E-417F-9D3F-5515873C269B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11BCCBFE-7C2E-417F-9D3F-5515873C269B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -111,10 +84,6 @@ Global
 		{E91B464F-EB3D-42C0-A831-F6AE69C4DB22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E91B464F-EB3D-42C0-A831-F6AE69C4DB22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E91B464F-EB3D-42C0-A831-F6AE69C4DB22}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9AC2CCE2-148B-4225-905C-E3A013434F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9AC2CCE2-148B-4225-905C-E3A013434F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9AC2CCE2-148B-4225-905C-E3A013434F2D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{9AC2CCE2-148B-4225-905C-E3A013434F2D}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
