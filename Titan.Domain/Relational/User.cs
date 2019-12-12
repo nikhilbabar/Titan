@@ -24,7 +24,7 @@ namespace Titan.Domain.Relational
         public string LastName { get; set; }
 
         [Column("UserTypeId")]
-        public int? TypeId { get; set; }
+        public byte TypeId { get; set; }
 
         [ForeignKey("TypeId")]
         public virtual UserType Type { get; set; }

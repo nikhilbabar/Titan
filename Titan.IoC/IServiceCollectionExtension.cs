@@ -50,7 +50,7 @@ namespace Titan.IoC
             services.AddDbContext<RelationalContext>(options => options.UseSqlServer(connectionString));
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-            services.AddScoped(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IFileReader, JsonReader>();
             return services;
         }

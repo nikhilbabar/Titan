@@ -5,12 +5,22 @@ using System.Text;
 
 namespace Titan.Repository.Interface
 {
-    public interface IUnitOfWork<TContext> where TContext : DbContext, new()
+    //public interface IUnitOfWork<TContext> where TContext : DbContext, new()
+    //{
+    //    DbSet<TEntity> GetRepository<TEntity>() where TEntity : class;
+    //    void BeginTransaction();
+    //    void CommitTransaction();
+    //    void RollbackTransaction();
+    //    bool Save();
+    //}
+
+    public interface IUnitOfWork
     {
-        DbSet<TEntity> GetRepository<TEntity>() where TEntity : class;
+        IGenericRepository<TEntity> GetRepository<TEntity>() where TEntity : class;
         void BeginTransaction();
         void CommitTransaction();
         void RollbackTransaction();
         bool Save();
     }
+
 }

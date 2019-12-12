@@ -11,11 +11,13 @@ namespace Titan.Repository
 { 
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        private readonly DbSet<T> _set;
+        private readonly RelationalContext _context;
+        private DbSet<T> _set;
 
-        public GenericRepository(DbSet<T> set)
+        public GenericRepository(RelationalContext context)
         {
-            _set = set;
+            _context = context;
+            _set = _context.Set<T>();
         }
 
         public DbSet<T> Set => _set;
