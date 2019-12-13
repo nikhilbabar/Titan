@@ -9,7 +9,7 @@ namespace Titan.Domain.Relational
     {
         public Search()
         {
-            Users = new HashSet<User>();
+            //Users = new HashSet<User>();
         }
 
         [Key]
@@ -19,6 +19,11 @@ namespace Titan.Domain.Relational
         [MaxLength(5000)]
         public string Query { get; set; }
 
-        public virtual ICollection<User> Users { get; set; }
+        public byte UserId { get; set; }
+
+        [ForeignKey("UserId")]
+        public UserType User { get; set; }
+
+        //public ICollection<User> Users { get; set; }
     }
 }

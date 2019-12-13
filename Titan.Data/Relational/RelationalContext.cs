@@ -6,7 +6,7 @@ using Titan.Domain.Relational;
 
 namespace Titan.Data.Relational
 {
-    public class RelationalContext: DbContext
+    public class RelationalContext : DbContext
     {
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserType> UserTypes { get; set; }
@@ -14,6 +14,7 @@ namespace Titan.Data.Relational
 
         public RelationalContext(DbContextOptions options) : base(options)
         {
+            this.Database.EnsureCreated();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
@@ -29,6 +30,10 @@ namespace Titan.Data.Relational
             }
         }
 
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Seed();
+        }
 
     }
 }

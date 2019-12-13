@@ -32,9 +32,17 @@ namespace Titan.Service
             return await Task.FromResult(types);
         }
 
-        public Task<UserTypeModel> GetAsync(byte id)
+        public async Task<UserTypeModel> GetAsync(byte id)
         {
-            throw new NotImplementedException();
+            var entity = _repository.Get<byte>(id);
+            var type = new UserTypeModel
+            {
+                Id = entity.Id,
+                Name = entity.Name,
+                Code = entity.Code
+            };
+
+            return await Task.FromResult(type);
         }
     }
 }
