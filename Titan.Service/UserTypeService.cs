@@ -34,7 +34,9 @@ namespace Titan.Service
 
         public async Task<UserTypeModel> GetAsync(byte id)
         {
-            var entity = _repository.Get<byte>(id);
+            //var entity = _repository.Get<byte>(id);
+            var entity = _repository.Get(x=> x.Id == 1).First();
+
             var type = new UserTypeModel
             {
                 Id = entity.Id,

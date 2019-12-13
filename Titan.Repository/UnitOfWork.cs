@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using Titan.Data.Relational;
 using Titan.Repository.Interface;
 //using System.Data.Entity;
@@ -83,6 +84,7 @@ namespace Titan.Repository
         private readonly IServiceProvider _provider;
         private bool _disposed;
         private IDbContextTransaction _transaction;
+        private Dictionary<string, dynamic> repositories = new Dictionary<string, dynamic>();
 
         public UnitOfWork(RelationalContext context, IServiceProvider provider)
         {
@@ -92,8 +94,18 @@ namespace Titan.Repository
 
         public IGenericRepository<TEntity> GetRepository<TEntity>() where TEntity : class
         {
-            var reposotory = _provider.GetService(typeof(IGenericRepository<TEntity>)) as IGenericRepository<TEntity>;
-            return reposotory;
+            IGenericRepository<TEntity> repository = null;
+            var key = typeof(TEntity).ToString();
+            if (repositories.ContainsKey(key))
+            {
+                repository = repositories[key];
+            }
+            else
+            {
+                repository = _provider.GetService(typeof(IGenericRepository<TEntity>)) as IGenericRepository<TEntity>;
+                repositories.Add(key, repository);
+            }
+            return repository;
         }
 
         public bool Save()
@@ -115,6 +127,27 @@ namespace Titan.Repository
                 throw ex;
             }
         }
+
+        public async Task<bool> SaveAsync()
+        {
+            var isSuccess = false;
+            try
+            {
+                BeginTransaction();
+                if (await _context.SaveChangesAsync() > 0)
+                {
+                    isSuccess = true;
+                    CommitTransaction();
+                }
+                return await Task.FromResult(isSuccess);
+            }
+            catch (Exception ex)
+            {
+                RollbackTransaction();
+                throw ex;
+            }
+        }
+
 
         protected virtual void Dispose(bool disposing)
         {

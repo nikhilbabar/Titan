@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Titan.Repository.Interface
 {
@@ -21,6 +22,7 @@ namespace Titan.Repository.Interface
         void CommitTransaction();
         void RollbackTransaction();
         bool Save();
+        Task<bool> SaveAsync();
     }
 
 }
