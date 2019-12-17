@@ -34,9 +34,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.Domain", "Titan.Domai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.Common", "Titan.Common\Titan.Common.csproj", "{E91B464F-EB3D-42C0-A831-F6AE69C4DB22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titan.Repository.Interface", "Titan.Repository.Interface\Titan.Repository.Interface.csproj", "{75CB899E-D8ED-49C1-9531-6B8E69C02021}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.Repository.Interface", "Titan.Repository.Interface\Titan.Repository.Interface.csproj", "{75CB899E-D8ED-49C1-9531-6B8E69C02021}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titan.Service.Interface", "Titan.Service.Interface\Titan.Service.Interface.csproj", "{7EB24BCE-A686-400E-8303-92516AEFDF2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.Service.Interface", "Titan.Service.Interface\Titan.Service.Interface.csproj", "{7EB24BCE-A686-400E-8303-92516AEFDF2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -12,7 +12,7 @@ namespace Titan.Data.Relational
         {
             builder.Entity<UserType>().HasData(
                 new UserType { Id = 1, Name = "Sytem", Code = 1 },
-                new UserType { Id = 2, Name = "Sytem", Code = 2 });
+                new UserType { Id = 2, Name = "Anonymous", Code = 2 });
         }
     }
 }
