@@ -41,9 +41,7 @@ namespace Titan.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            IMapper mapper = new MapperConfiguration(x => x.AddMaps(Assembly.Load("Titan.Service"))).CreateMapper();
-            services.AddSingleton(mapper);
-
+            services.AddMapper();
             /// Dependency Injection
             services.AddDataFactories();
             services.AddServices();

@@ -1,11 +1,10 @@
 ﻿using AutoMapper;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using Titan.Domain.Relational;
 using Titan.Model;
 
-namespace Titan.Service.Mappers
+namespace Titan.Mapper
 {
     public class UserTypeMapper : Profile
     {

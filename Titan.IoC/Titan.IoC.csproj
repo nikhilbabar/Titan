@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Titan.Common\Titan.Common.csproj" />
     <ProjectReference Include="..\Titan.Data\Titan.Data.csproj" />
+    <ProjectReference Include="..\Titan.Mapper\Titan.Mapper.csproj" />
     <ProjectReference Include="..\Titan.Repository.Interface\Titan.Repository.Interface.csproj" />
     <ProjectReference Include="..\Titan.Repository\Titan.Repository.csproj" />
     <ProjectReference Include="..\Titan.Service.Interface\Titan.Service.Interface.csproj" />

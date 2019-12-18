@@ -1,8 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text;
 using Titan.Common.Utilities;
 using Titan.Data.Relational;
@@ -43,6 +45,12 @@ namespace Titan.IoC
         /// It's dangerous to resolve a scoped service from a singleton. It may cause 
         /// the service to have incorrect state when processing subsequent requests.
         /// 
+
+        public static IServiceCollection AddMapper(this IServiceCollection services) {
+            IMapper mapper = new MapperConfiguration(x => x.AddMaps(Assembly.Load("Titan.Mapper"))).CreateMapper();
+            services.AddSingleton(mapper);
+            return services;
+        }
 
         public static IServiceCollection AddDataFactories(this IServiceCollection services)
         {
