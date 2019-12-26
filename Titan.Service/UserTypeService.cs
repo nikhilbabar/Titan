@@ -11,29 +11,29 @@ using Titan.Service.Interface;
 
 namespace Titan.Service
 {
-    public class UserTypeService : IUserTypeService
+    public class UserTypeService : BaseService<UserType>, IUserTypeService
     {
         private readonly IUnitOfWork _unitOfWork;
-        private readonly IGenericRepository<UserType> _repository;
         private readonly IMapper _mapper;
 
         public UserTypeService(IUnitOfWork unitOfWork, IMapper mapper)
+            : base(unitOfWork.GetRepository<UserType>())
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
-            _repository = _unitOfWork.GetRepository<UserType>();
+            
         }
 
         public async Task<List<UserTypeModel>> GetAsync()
         {
-            var entities = await _repository.GetAsync();
+            var entities = await GetEntitiesAsync();
             var types = _mapper.Map<List<UserTypeModel>>(entities.ToList());
             return types;
         }
 
         public async Task<UserTypeModel> GetAsync(byte id)
         {
-            var entity = await _repository.GetAsync(x=> x.Id == id);
+            var entity = await GetEntitiesAsync(x=> x.Id == id);
             var type = _mapper.Map<UserTypeModel>(entity.First());
             return type;
         }

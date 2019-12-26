@@ -11,7 +11,7 @@ namespace Titan.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DatumController : ControllerBase
+    public class DatumController : BaseController
     {
         private readonly IDatumService _service;
         public DatumController(IDatumService service)

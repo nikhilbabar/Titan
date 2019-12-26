@@ -11,7 +11,7 @@ namespace Titan.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserTypeController : ControllerBase
+    public class UserTypeController : BaseController
     {
         private readonly IUserTypeService _service;
         public UserTypeController(IUserTypeService service)
@@ -44,23 +44,6 @@ namespace Titan.WebApi.Controllers
 
             return Ok(result);
         }
-
-        // POST: api/UserType
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT: api/UserType/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        
     }
 }

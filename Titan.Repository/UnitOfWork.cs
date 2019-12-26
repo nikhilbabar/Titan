@@ -163,17 +163,17 @@ namespace Titan.Repository
             GC.SuppressFinalize(this);
         }
 
-        public void BeginTransaction()
+        private void BeginTransaction()
         {
             _transaction = _context.Database.BeginTransaction();
         }
 
-        public void CommitTransaction()
+        private void CommitTransaction()
         {
             _transaction.Commit();
         }
 
-        public void RollbackTransaction()
+        private void RollbackTransaction()
         {
             _transaction.Rollback();
             _transaction.Dispose();

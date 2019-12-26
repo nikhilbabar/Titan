@@ -18,9 +18,9 @@ namespace Titan.Repository.Interface
     public interface IUnitOfWork
     {
         IGenericRepository<TEntity> GetRepository<TEntity>() where TEntity : class;
-        void BeginTransaction();
-        void CommitTransaction();
-        void RollbackTransaction();
+        //void BeginTransaction();
+        //void CommitTransaction();
+        //void RollbackTransaction();
         bool Save();
         Task<bool> SaveAsync();
     }

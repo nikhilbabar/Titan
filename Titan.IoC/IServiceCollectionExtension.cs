@@ -65,6 +65,7 @@ namespace Titan.IoC
 
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
+            services.AddScoped<IUnitOfWorkService, UnitOfWorkService>();
             services.AddTransient<IDatumService, DatumService>();
             services.AddTransient<IUserTypeService, UserTypeService>();
             return services;
